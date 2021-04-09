@@ -26,7 +26,17 @@ Integrated labeled property graph generation using neo4j.
 Features
 --------
 
-* TODO
+* Minimal and generic code for loading nodes from various sources (csv, parquet etc.)
+
+* Create hierarchical associations to make a data model that is remarkably similar in its form to the real world
+
+* Normalized yet richly connected entities
+
+* Declarative interface for generating a hierarchical graph database from a set of independent tables
+
+* Ability to easily create many such databases on the fly and not be limited to one. Leads to flexibility and adaptability - especially useful for R&D
+
+* Idempotent graph generation process
 
 Credits
 -------
