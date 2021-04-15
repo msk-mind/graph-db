@@ -10,3 +10,8 @@ twine==1.14.0
 Click==7.0
 pytest==4.6.5
 pytest-runner==5.1
+deltalake>=0.2.1
+pyspark==3.0.1
+pytest-spark==0.6.0
+neo4j
+pandas>=1.1.0
