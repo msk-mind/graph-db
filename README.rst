@@ -18,6 +18,8 @@ graph-db
 
 Integrated labeled property graph generation using neo4j.
 
+This library allows users to import records from various sources like CSV, parquet etc into noe4j and form relationships on the imported records. It is assumed that the user of this library is familiar with neo4j's cipher query language.
+
 
 * Free software: Apache Software License 2.0
 * Documentation: https://graph-db.readthedocs.io.
