@@ -78,7 +78,7 @@ def load_delta_table(key):
         print(uri)
         print(user)
         print(pwd)
-        conn = Neo4jConnection(uri=uri[0],user=user[0],pwd=pwd)
+        conn = Neo4jConnection(uri=uri[0],user=user[0],pwd=pwd)  # todo: remove tuple for uri and user. not sure why they are tuples
         conn.query(query)
 
 
