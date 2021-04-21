@@ -130,4 +130,4 @@ dmypy.json
 .pyre/
 
  configs
- app_config.yml
+app_config.yml
