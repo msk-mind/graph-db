@@ -5,7 +5,7 @@ Created on April 20, 2021
 '''
 
 from pyspark.sql import SparkSession
-from data_processing.common.config import ConfigSet
+from graph_db.common.config import ConfigSet
 
 """Common spark session"""
 
@@ -28,11 +28,11 @@ class SparkConfig:
         spark_executor_memory = cfg.get_value(path=config_name +
                                                    '::$.spark_application_config[:3]["spark.executor.memory"]')
         spark_executor_pyspark_memory = \
-            cfg.get_value(path=config_name + '::$.spark_application_config[:4]["spark.executor.pyspark.memory"]')
+            cfg.get_value(path=config_name + '::$.spark_application_config[:5]["spark.executor.pyspark.memory"]')
         spark_sql_shuffle_partitions = \
-            cfg.get_value(path=config_name + '::$.spark_application_config[:5]["spark.sql.shuffle.partitions"]')
+            cfg.get_value(path=config_name + '::$.spark_application_config[:6]["spark.sql.shuffle.partitions"]')
         spark_driver_maxresultsize = \
-            cfg.get_value(path=config_name + '::$.spark_application_config[:6]["spark.driver.maxResultSize"]')
+            cfg.get_value(path=config_name + '::$.spark_application_config[:7]["spark.driver.maxResultSize"]')
 
         return SparkSession.builder \
             .appName(app_name) \

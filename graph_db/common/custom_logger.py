@@ -21,7 +21,7 @@ class MultilineFormatter(logging.Formatter):
         return output
 
 
-def init_logger(filename='data-processing.log'):
+def init_logger(filename='graph-db.log'):
     # Logging configuration
     log_file = filename
 
