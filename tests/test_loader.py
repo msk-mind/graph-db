@@ -11,22 +11,14 @@ from graph_db.loader import load_delta_table
 APP_CFG = 'APP_CFG'
 DATA_CFG = 'DATA_CFG'
 
+
 def test_load_delta_table():
-    # load spark session
+    # load configs
     ConfigSet(name=APP_CFG, config_file='tests/test_app_config.yml')
     cfg = ConfigSet(name=DATA_CFG, config_file='tests/test_data_config.yml')
 
-
-    #load_delta_table(key='user_table')
-
-
+    # get list of delta tables to load
     tables = cfg.get_value(DATA_CFG + '::$.load')
-
-    print(tables)
-
-    # label = cfg.get_value(DATA_CFG + '::$.load-delta-table[0]["{0}"]["label"]'.format(key))
-    # primary_keys = cfg.get_value(DATA_CFG + '::$.load-delta-table[0]["{0}"]["primary_keys"]'.format(key))
-    # properties = cfg.get_value(DATA_CFG + '::$.load-delta-table[0]["{0}"]["properties"]'.format(key))
 
     for table in tables:
 

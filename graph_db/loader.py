@@ -11,16 +11,17 @@ APP_CFG = 'APP_CFG'
 DATA_CFG = 'DATA_CFG'
 
 def load_delta_table(path, label, primary_keys, properties):
+    # read delta table
     cfg = ConfigSet()
-
     spark = SparkConfig().spark_session(config_name=APP_CFG, app_name="load_delta_table")
-
     df = spark.read.format('delta').load(path)
 
+    # read neo4j properties
     uri = cfg.get_value(path=APP_CFG + '::$.neo4j[:1][uri]'),
     user = cfg.get_value(path=APP_CFG + '::$.neo4j[:2][username]'),
     pwd = cfg.get_value(path=APP_CFG + '::$.neo4j[:3][password]')
 
+    # set broadcast variables
     broadcast_vars = spark.sparkContext.broadcast({'label': label,
                                       'primary_keys': primary_keys,
                                       'properties': properties,
@@ -72,4 +73,5 @@ def load_delta_table(path, label, primary_keys, properties):
         conn.query(query)
 
 
+    # write nodes to neo4j
     df.rdd.foreach(__write_node)
