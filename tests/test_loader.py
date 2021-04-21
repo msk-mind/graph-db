@@ -5,7 +5,6 @@ Created on April 20, 2021
 '''
 from graph_db.common.config import ConfigSet
 from graph_db.loader import load_delta_table
-from graph_db.util.config import get_data_config
 
 APP_CFG = 'APP_CFG'
 DATA_CFG = 'DATA_CFG'
