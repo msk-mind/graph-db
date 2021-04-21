@@ -10,24 +10,16 @@ from graph_db.common.spark_session import SparkConfig
 APP_CFG = 'APP_CFG'
 DATA_CFG = 'DATA_CFG'
 
-def load_delta_table(key):
+def load_delta_table(path, label, primary_keys, properties):
+    cfg = ConfigSet()
 
     spark = SparkConfig().spark_session(config_name=APP_CFG, app_name="load_delta_table")
 
-    cfg = ConfigSet()
-
-    path = cfg.get_value(DATA_CFG+'::$.load-delta-table[0]["{0}"]["path"]'.format(key))
-
     df = spark.read.format('delta').load(path)
 
-    label = cfg.get_value(DATA_CFG + '::$.load-delta-table[0]["{0}"]["label"]'.format(key))
-    primary_keys = cfg.get_value(DATA_CFG + '::$.load-delta-table[0]["{0}"]["primary_keys"]'.format(key))
-    properties = cfg.get_value(DATA_CFG + '::$.load-delta-table[0]["{0}"]["properties"]'.format(key))
     uri = cfg.get_value(path=APP_CFG + '::$.neo4j[:1][uri]'),
     user = cfg.get_value(path=APP_CFG + '::$.neo4j[:2][username]'),
     pwd = cfg.get_value(path=APP_CFG + '::$.neo4j[:3][password]')
-
-
 
     broadcast_vars = spark.sparkContext.broadcast({'label': label,
                                       'primary_keys': primary_keys,
@@ -41,9 +33,7 @@ def load_delta_table(key):
         # from config
         label = broadcast_vars.value['label']
         primary_keys = broadcast_vars.value['primary_keys']
-        primary_keys = primary_keys.replace(" ", "").split(',')
-        properties = broadcast_vars.value['properties']
-        cols = properties.replace(" ", "").split(',')
+        cols = broadcast_vars.value['properties']
         uri = broadcast_vars.value['uri']
         user = broadcast_vars.value['user']
         pwd = broadcast_vars.value['pwd']
