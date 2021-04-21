@@ -1,6 +1,6 @@
 [
     # specify directory to the delta table
-    import-delta: 'file:///<path_to_delta_table>',
+    load_delta_table: 'file:///<path_to_delta_table>',
 
     # specify cipher query
     cipher: 'match (a:User)
