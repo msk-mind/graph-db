@@ -1,0 +1,23 @@
+# load delta tables into neo4j - one node per record
+load-delta-table:
+    # specify a unique key for each block-mapping containing path and query
+    - user_table:  # unique key
+        # specify directory to the delta table
+        path: 'tests/input_data/user_table'
+        label: 'User'  # node label
+        primary_keys: id, firstname
+        properties: middlename, lastname, gender, salary
+
+# execute the following cipher queries in sequence in order to build relationships
+cipher: [
+
+    # specify cipher query
+    cipher: 'MERGE (u:User {uid: row.uid})
+                ON CREATE SET
+                u.firstName = row.firstName,
+                u.lastName = row.lastName,
+                u.age = toInteger(row.age),
+                u.cityLived = row.cityLived;',
+
+    cipher: 'y'
+]

@@ -1,0 +1,30 @@
+# copy-paste this template into a config.yaml before using
+# as a best practice, config.yaml must not be committed to github
+# as it may contain sensitive deployment information.
+
+
+spark_cluster_config:
+  - spark.uri: local
+  - spark.driver.host: localhost
+
+spark_application_config:
+  # 5% total number of cores in cluster
+  - spark.executor.cores: 2
+  # 50% total number of cores in cluster
+  - spark.cores.max: 8
+  # 5% total memory in cluster
+  - spark.executor.memory: 6g
+  # 5% total memory in cluster
+  - spark.driver.memory: 6g
+  # 80% executor memory
+  - spark.executor.pyspark.memory: 6g
+  - spark.sql.shuffle.partitions: 20
+  - spark.driver.maxResultSize: 4g
+
+neo4j:
+    - uri: bolt://localhost:7687
+    - username: 'neo4j'
+    - password: 'password'
+
+
+
