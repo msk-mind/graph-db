@@ -1,23 +1,14 @@
-# import records from a delta table and then group the nodes generated from those records
-group_from_delta:
-  - delta_path: ''   # path to the delta table
-  - label: User        # label/type of grouping node
-  - primary_keys: id  # one of the primary keys will be displayed on the node in the neo4j browser
-  - properties: firstname, middlename, lastname, gender, salary
-  - group:
-      - relationship:
-        - label: ''    # label/type of grouping relationship
-        - properties: ''
-      - node:          # label/type of gruping node
-        - label: ''
-        - properties: ''
+[
+    # specify directory to the delta table
+    import-delta: 'file:///',
 
-# group nodes that already exist in the neo4j database
-group:
-  - match_query: ''
-    - relationship:
-      - label: ''    # label/type of grouping relationship
-      - properties: ''
-    - node:          # label/type of gruping node
-      - label: ''
-      - properties: ''
+    # specify cipher query
+    cipher: 'MERGE (u:User {uid: row.uid})
+                ON CREATE SET
+                u.firstName = row.firstName,
+                u.lastName = row.lastName,
+                u.age = toInteger(row.age),
+                u.cityLived = row.cityLived;',
+
+    cipher: 'y'
+]
