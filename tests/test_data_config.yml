@@ -13,12 +13,12 @@ load: [
 cipher: [
 
     # specify cipher query
-    cipher: "MERGE (u:User {uid: row.uid})
-                ON CREATE SET
-                u.firstName = row.firstName,
-                u.lastName = row.lastName,
-                u.age = toInteger(row.age),
-                u.cityLived = row.cityLived;",
+    cipher: "match (a:User)
+             merge (b:UserGroup {firstName: a.firstName})
+             merge (a)-[:belongs_to]->(b)
+               on create set
+                 b.count = coalesce(b.count, 0)+1
+             return a, b",
 
-    cipher: "y"
+    cipher: "another cipher"
 ]
