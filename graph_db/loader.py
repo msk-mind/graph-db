@@ -3,25 +3,25 @@ Created on April 07, 2021
 
 @author: pashaa@mskcc.org
 '''
+from graph_db.build import APP_CFG
 from graph_db.common.config import ConfigSet
 from graph_db.common.neo4j_connection import Neo4jConnection
 from graph_db.common.spark_session import SparkConfig
+from graph_db.extract import extract_from_delta_table
 
-APP_CFG = 'APP_CFG'
-DATA_CFG = 'DATA_CFG'
 
 def load_delta_table(path, label, primary_keys, properties):
     # read delta table
-    cfg = ConfigSet()
-    spark = SparkConfig().spark_session(config_name=APP_CFG, app_name="load_delta_table")
-    df = spark.read.format('delta').load(path)
+    df = extract_from_delta_table(path)
 
     # read neo4j properties
+    cfg = ConfigSet()
     uri = cfg.get_value(path=APP_CFG + '::$.neo4j[:1][uri]'),
     user = cfg.get_value(path=APP_CFG + '::$.neo4j[:2][username]'),
     pwd = cfg.get_value(path=APP_CFG + '::$.neo4j[:3][password]')
 
     # set broadcast variables
+    spark = SparkConfig().spark_session(config_name=APP_CFG, app_name="grapb_db")
     broadcast_vars = spark.sparkContext.broadcast({'label': label,
                                       'primary_keys': primary_keys,
                                       'properties': properties,
