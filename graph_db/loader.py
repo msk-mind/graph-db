@@ -3,16 +3,23 @@ Created on April 07, 2021
 
 @author: pashaa@mskcc.org
 '''
-from graph_db.build import APP_CFG
-from graph_db.common.config import ConfigSet
+from graph_db.common.config import ConfigSet, APP_CFG
 from graph_db.common.neo4j_connection import Neo4jConnection
 from graph_db.common.spark_session import SparkConfig
-from graph_db.extract import extract_from_delta_table
 
 
-def load_delta_table(path, label, primary_keys, properties):
-    # read delta table
-    df = extract_from_delta_table(path)
+
+def load_spark_dataframe(dataframe, label, primary_keys, properties):
+    '''
+    Loads records from a spark dataframe into neo4j. Each record from the dataframe is loaded as a node in neo4j.
+
+    :param dataframe: spark dataframe to load
+    :param label: label to be assigned for each graph node that corresponds to dataframe record
+    :param primary_keys: dataframe columns that are primary keys
+    :param properties: dataframe columns (excluding primary keys) that need to be loaded
+    '''
+    # todo: verify primary keys and properties are in dataframe
+    df = dataframe
 
     # read neo4j properties
     cfg = ConfigSet()

@@ -11,6 +11,9 @@ from graph_db.common.custom_logger import init_logger
 
 logger = init_logger()
 
+# standard config names
+APP_CFG = 'APP_CFG'
+DATA_CFG = 'DATA_CFG'
 
 class ConfigSet():
     '''

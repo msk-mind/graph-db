@@ -5,11 +5,9 @@ Created on April 20, 2021
 '''
 import json
 
-from graph_db.common.config import ConfigSet
-from graph_db.loader import load_delta_table
-
-APP_CFG = 'APP_CFG'
-DATA_CFG = 'DATA_CFG'
+from graph_db.common.config import ConfigSet, APP_CFG, DATA_CFG
+from graph_db.extractor import extract_from_delta_table
+from graph_db.loader import load_spark_dataframe
 
 
 def test_load_delta_table():
@@ -32,5 +30,8 @@ def test_load_delta_table():
         primary_keys = table['primary_keys']
         properties = table['properties']
 
+        # load dataframe
+        df = extract_from_delta_table(path)
+
         # load table into neo4j
-        load_delta_table(path, label, primary_keys, properties)
+        load_spark_dataframe(df, label, primary_keys, properties)

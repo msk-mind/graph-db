@@ -3,8 +3,7 @@ Created on April 22, 2021
 
 @author: pashaa@mskcc.org
 '''
-from graph_db.build import APP_CFG
-from graph_db.common.config import ConfigSet
+from graph_db.common.config import APP_CFG
 from graph_db.common.spark_session import SparkConfig
 
 
