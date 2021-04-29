@@ -16,9 +16,9 @@ delta_to_json: [
     path: '/Users/pashaa/dev/temp/lung_tables_for_neo4j/WSI_PATH_Hobbit_WSI_Lung_HNEIHC',
 ]
 
-# execute the following cipher queries in sequence in order to build relationships
+# execute the following cipher queries in sequence in order to load json data and build relationships
 cipher: [
-    # specify cipher query
+    # specify paths to files containing cipher queries
     path: 'tests/cipher1.cql',
     path: 'tests/cipher2.sql'
-]
+]   
