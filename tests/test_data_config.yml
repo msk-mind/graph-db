@@ -6,7 +6,6 @@ clean_neo4j_import_dir: False
 
 # convert a list of delta tables and save them in the neo4j_import_dir
 delta_to_json: [
-
     path: '/Users/pashaa/dev/temp/lung_tables_for_neo4j/CT_20201106',
     path: '/Users/pashaa/dev/temp/lung_tables_for_neo4j/DICOM_LUNG_CTs_XNAT_20201106',
     path: '/Users/pashaa/dev/temp/lung_tables_for_neo4j/MHA_Lung_CT_annotations_eggerj',
@@ -19,8 +18,7 @@ delta_to_json: [
 
 # execute the following cipher queries in sequence in order to build relationships
 cipher: [
-
     # specify cipher query
-    path: 'tests/cipher.cql'
-
+    path: 'tests/cipher1.cql',
+    path: 'tests/cipher2.sql'
 ]
