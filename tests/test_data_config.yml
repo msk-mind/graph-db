@@ -1,3 +1,7 @@
+# location to store temp files
+temp_dir: '/opt/neo4j-community-4.2.4/import'
+clean_temp_dir: False
+
 # load a list of delta tables into neo4j - one node per record
 load_delta: [
 
@@ -15,6 +19,6 @@ load_delta: [
 cipher: [
 
     # specify cipher query
-    path: 'path_to_cipher_script'
+    path: 'tests/cipher.cql'
 
 ]
