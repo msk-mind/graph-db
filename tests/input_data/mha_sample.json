@@ -1,0 +1,130 @@
+{
+  "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scan_annotations/190794/190794_AMP.mha",
+  "modificationTime": "2020-12-18T12:37:48.000-05:00",
+  "length": 66584898,
+  "AccessionNumber": "190794",
+  "scan_annotation_record_uuid": "SCAN_ANNOTATION-190794_AMP",
+  "metadata": {
+    "spacing": "(0.761719, 0.761719, 5.0)",
+    "size": "(512, 512, 127)",
+    "origin": "(-197.0, -184.0, -635.0)",
+    "direction": "(1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0)"
+  }
+}
+{
+  "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scan_annotations/190834/190834_AMP.mha",
+  "modificationTime": "2020-12-18T12:36:19.000-05:00",
+  "length": 72352068,
+  "AccessionNumber": "190834",
+  "scan_annotation_record_uuid": "SCAN_ANNOTATION-190834_AMP",
+  "metadata": {
+    "spacing": "(0.976562, 0.976562, 5.0)",
+    "size": "(512, 512, 138)",
+    "origin": "(-244.1, -250.0, -659.0)",
+    "direction": "(1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0)"
+  }
+}
+{
+  "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scan_annotations/190435/190435_AMP.mha",
+  "modificationTime": "2020-12-18T12:36:51.000-05:00",
+  "length": 48234822,
+  "AccessionNumber": "190435",
+  "scan_annotation_record_uuid": "SCAN_ANNOTATION-190435_AMP",
+  "metadata": {
+    "spacing": "(0.976562, 0.976562, 5.0)",
+    "size": "(512, 512, 92)",
+    "origin": "(-227.4, -240.0, -476.75)",
+    "direction": "(1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0)"
+  }
+}
+{
+  "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scan_annotations/190988/190988_AMP.mha",
+  "modificationTime": "2020-12-18T12:37:14.000-05:00",
+  "length": 36700488,
+  "AccessionNumber": "190988",
+  "scan_annotation_record_uuid": "SCAN_ANNOTATION-190988_AMP",
+  "metadata": {
+    "spacing": "(0.732422, 0.732422, 5.0)",
+    "size": "(512, 512, 70)",
+    "origin": "(-200.7, -178.9, -322.25)",
+    "direction": "(1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0)"
+  }
+}
+{
+  "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scan_annotations/190647/190647_AMP.mha",
+  "modificationTime": "2020-12-18T12:38:48.000-05:00",
+  "length": 68157764,
+  "AccessionNumber": "190647",
+  "scan_annotation_record_uuid": "SCAN_ANNOTATION-190647_AMP",
+  "metadata": {
+    "spacing": "(0.703125, 0.703125, 5.0)",
+    "size": "(512, 512, 130)",
+    "origin": "(-179.3, -180.0, -640.0)",
+    "direction": "(1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0)"
+  }
+}
+{
+  "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scan_annotations/190817/190817_AMP.mha",
+  "modificationTime": "2020-12-18T12:39:23.000-05:00",
+  "length": 66584900,
+  "AccessionNumber": "190817",
+  "scan_annotation_record_uuid": "SCAN_ANNOTATION-190817_AMP",
+  "metadata": {
+    "spacing": "(0.878906, 0.878906, 5.0)",
+    "size": "(512, 512, 127)",
+    "origin": "(-229.4, -258.0, -630.0)",
+    "direction": "(1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0)"
+  }
+}
+{
+  "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scan_annotations/191052/191052_AMP.mha",
+  "modificationTime": "2020-12-18T12:38:09.000-05:00",
+  "length": 34603335,
+  "AccessionNumber": "191052",
+  "scan_annotation_record_uuid": "SCAN_ANNOTATION-191052_AMP",
+  "metadata": {
+    "spacing": "(0.814453, 0.814453, 5.0)",
+    "size": "(512, 512, 66)",
+    "origin": "(-208.5, -168.5, -485.5)",
+    "direction": "(1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0)"
+  }
+}
+{
+  "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scan_annotations/190755/190755_AMP.mha",
+  "modificationTime": "2020-12-18T12:40:20.000-05:00",
+  "length": 31457605,
+  "AccessionNumber": "190755",
+  "scan_annotation_record_uuid": "SCAN_ANNOTATION-190755_AMP",
+  "metadata": {
+    "spacing": "(0.636719, 0.636719, 5.0)",
+    "size": "(512, 512, 60)",
+    "origin": "(-143.6, -136.8, -260.0)",
+    "direction": "(1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0)"
+  }
+}
+{
+  "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scan_annotations/191129/191129_AMP.mha",
+  "modificationTime": "2020-12-18T12:39:59.000-05:00",
+  "length": 68682050,
+  "AccessionNumber": "191129",
+  "scan_annotation_record_uuid": "SCAN_ANNOTATION-191129_AMP",
+  "metadata": {
+    "spacing": "(0.863281, 0.863281, 5.0)",
+    "size": "(512, 512, 131)",
+    "origin": "(-221.0, -221.0, -650.0)",
+    "direction": "(1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0)"
+  }
+}
+{
+  "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scan_annotations/190910/190910_AMP.mha",
+  "modificationTime": "2020-12-18T12:35:35.000-05:00",
+  "length": 68682050,
+  "AccessionNumber": "190910",
+  "scan_annotation_record_uuid": "SCAN_ANNOTATION-190910_AMP",
+  "metadata": {
+    "spacing": "(0.859375, 0.859375, 5.0)",
+    "size": "(512, 512, 131)",
+    "origin": "(-220.0, -220.0, -650.0)",
+    "direction": "(1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0)"
+  }
+}
