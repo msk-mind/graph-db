@@ -1,9 +1,11 @@
-# location to store temp files
-temp_dir: '/opt/neo4j-community-4.2.4/import'
-clean_temp_dir: False
+# location to store json files
+neo4j_import_dir: '/opt/neo4j-community-4.2.4/import'
 
-# load a list of delta tables into neo4j - one node per record
-load_delta: [
+# clean out the jsons after execution?
+clean_neo4j_import_dir: False
+
+# convert a list of delta tables and save them in the neo4j_import_dir
+delta_to_json: [
 
     path: '/Users/pashaa/dev/temp/lung_tables_for_neo4j/CT_20201106',
     path: '/Users/pashaa/dev/temp/lung_tables_for_neo4j/DICOM_LUNG_CTs_XNAT_20201106',
