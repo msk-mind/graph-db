@@ -1,4 +1,5 @@
-# location to store json files
+# location to store json and cypher files. these files need to be stored in the import dir in order for them to be
+# imported by neo4j.
 neo4j_import_dir: '/opt/neo4j-community-4.2.4/import'
 
 # if set to false, json will not be overwritten if it already exists
@@ -6,15 +7,18 @@ overwrite_json: True
 
 # convert a list of delta tables and save them in the neo4j_import_dir
 delta_to_json: [
-    path: '/Users/pashaa/dev/temp/lung_tables_for_neo4j/CT_20201106',
-    path: '/Users/pashaa/dev/temp/lung_tables_for_neo4j/DICOM_LUNG_CTs_XNAT_20201106',
-    path: '/Users/pashaa/dev/temp/lung_tables_for_neo4j/MHA_Lung_CT_annotations_eggerj',
-    path: '/Users/pashaa/dev/temp/lung_tables_for_neo4j/REGIONAL_BITMASK',
-    path: '/Users/pashaa/dev/temp/lung_tables_for_neo4j/REGIONAL_CONCAT',
-    path: '/Users/pashaa/dev/temp/lung_tables_for_neo4j/REGIONAL_CONCAT_ARCHIVED',
-    path: '/Users/pashaa/dev/temp/lung_tables_for_neo4j/REGIONAL_GEOJSON',
-    path: '/Users/pashaa/dev/temp/lung_tables_for_neo4j/WSI_PATH_Hobbit_WSI_Lung_HNEIHC',
+#    path: '/Users/pashaa/dev/temp/lung_tables_for_neo4j/CT_20201106',
+#    path: '/Users/pashaa/dev/temp/lung_tables_for_neo4j/DICOM_LUNG_CTs_XNAT_20201106',
+#    path: '/Users/pashaa/dev/temp/lung_tables_for_neo4j/MHA_Lung_CT_annotations_eggerj',
+#    path: '/Users/pashaa/dev/temp/lung_tables_for_neo4j/REGIONAL_BITMASK',
+#    path: '/Users/pashaa/dev/temp/lung_tables_for_neo4j/REGIONAL_CONCAT',
+#    path: '/Users/pashaa/dev/temp/lung_tables_for_neo4j/REGIONAL_CONCAT_ARCHIVED',
+#    path: '/Users/pashaa/dev/temp/lung_tables_for_neo4j/REGIONAL_GEOJSON',
+#    path: '/Users/pashaa/dev/temp/lung_tables_for_neo4j/WSI_PATH_Hobbit_WSI_Lung_HNEIHC',
 ]
+
+# if set to false, cypher will not be overwritten into neo4j's import dir if it already exists
+overwrite_cipher: True
 
 # execute the following cipher queries in sequence in order to load json data and build relationships
 cipher: [
