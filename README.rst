@@ -32,7 +32,7 @@ Test
 
 Usage
 -----
-Setup a local neo4j instance and execute the following commmand.
+Setup a local neo4j instance with credentials as specified in tests/test_app_config.yml and execute the following commmand.
 
 ::
     $ python -m graph_db.builder -d tests/test_data_config.yml -a tests/test_app_config.yml
