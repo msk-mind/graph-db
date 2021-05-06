@@ -23,14 +23,14 @@ This library allows users to import records from various sources like CSV, parqu
 * Documentation: https://graph-db.readthedocs.io.
 
 
-test
+Test
 ----
 
 ::
     $ make test
 
 
-usage
+Usage
 -----
 Setup a local neo4j instance and execute the following commmand.
 

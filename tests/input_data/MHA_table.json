@@ -1,4 +1,4 @@
-{
+[{
   "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scan_annotations/190794/190794_AMP.mha",
   "modificationTime": "2020-12-18T12:37:48.000-05:00",
   "length": 66584898,
@@ -10,7 +10,7 @@
     "origin": "(-197.0, -184.0, -635.0)",
     "direction": "(1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0)"
   }
-}
+},
 {
   "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scan_annotations/190834/190834_AMP.mha",
   "modificationTime": "2020-12-18T12:36:19.000-05:00",
@@ -23,7 +23,7 @@
     "origin": "(-244.1, -250.0, -659.0)",
     "direction": "(1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0)"
   }
-}
+},
 {
   "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scan_annotations/190435/190435_AMP.mha",
   "modificationTime": "2020-12-18T12:36:51.000-05:00",
@@ -36,7 +36,7 @@
     "origin": "(-227.4, -240.0, -476.75)",
     "direction": "(1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0)"
   }
-}
+},
 {
   "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scan_annotations/190988/190988_AMP.mha",
   "modificationTime": "2020-12-18T12:37:14.000-05:00",
@@ -49,7 +49,7 @@
     "origin": "(-200.7, -178.9, -322.25)",
     "direction": "(1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0)"
   }
-}
+},
 {
   "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scan_annotations/190647/190647_AMP.mha",
   "modificationTime": "2020-12-18T12:38:48.000-05:00",
@@ -62,7 +62,7 @@
     "origin": "(-179.3, -180.0, -640.0)",
     "direction": "(1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0)"
   }
-}
+},
 {
   "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scan_annotations/190817/190817_AMP.mha",
   "modificationTime": "2020-12-18T12:39:23.000-05:00",
@@ -75,7 +75,7 @@
     "origin": "(-229.4, -258.0, -630.0)",
     "direction": "(1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0)"
   }
-}
+},
 {
   "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scan_annotations/191052/191052_AMP.mha",
   "modificationTime": "2020-12-18T12:38:09.000-05:00",
@@ -88,7 +88,7 @@
     "origin": "(-208.5, -168.5, -485.5)",
     "direction": "(1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0)"
   }
-}
+},
 {
   "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scan_annotations/190755/190755_AMP.mha",
   "modificationTime": "2020-12-18T12:40:20.000-05:00",
@@ -101,7 +101,7 @@
     "origin": "(-143.6, -136.8, -260.0)",
     "direction": "(1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0)"
   }
-}
+},
 {
   "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scan_annotations/191129/191129_AMP.mha",
   "modificationTime": "2020-12-18T12:39:59.000-05:00",
@@ -114,7 +114,7 @@
     "origin": "(-221.0, -221.0, -650.0)",
     "direction": "(1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0)"
   }
-}
+},
 {
   "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scan_annotations/190910/190910_AMP.mha",
   "modificationTime": "2020-12-18T12:35:35.000-05:00",
@@ -127,4 +127,4 @@
     "origin": "(-220.0, -220.0, -650.0)",
     "direction": "(1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0)"
   }
-}
+}]

@@ -1,4 +1,4 @@
-{
+[{
   "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scans/190683/SCANS/2/DICOM/1.2.840.113745.101000.2197000.42298.6662.18367364-2-7-1ike5eg.dcm",
   "modificationTime": "2019-03-26T17:35:00.000-04:00",
   "length": 528568,
@@ -111,7 +111,7 @@
     "PixelSpacing": "0.824219//0.824219",
     "RescaleType": "HU"
   }
-}
+},
 {
   "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scans/190683/SCANS/2/DICOM/1.2.840.113745.101000.2197000.42298.6662.18367364-2-3-1ike5ec.dcm",
   "modificationTime": "2019-03-26T17:35:01.000-04:00",
@@ -225,7 +225,7 @@
     "PixelSpacing": "0.824219//0.824219",
     "RescaleType": "HU"
   }
-}
+},
 {
   "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scans/190683/SCANS/2/DICOM/1.2.840.113745.101000.2197000.42298.6662.18367364-2-7-9ike5eg.dcm",
   "modificationTime": "2019-03-26T17:35:00.000-04:00",
@@ -339,7 +339,7 @@
     "PixelSpacing": "0.824219//0.824219",
     "RescaleType": "HU"
   }
-}
+},
 {
   "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scans/190683/SCANS/2/DICOM/1.2.840.113745.101000.2197000.42298.6662.18367364-2-3-9ike5ec.dcm",
   "modificationTime": "2019-03-26T17:35:01.000-04:00",
@@ -453,7 +453,7 @@
     "PixelSpacing": "0.824219//0.824219",
     "RescaleType": "HU"
   }
-}
+},
 {
   "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scans/190683/SCANS/2/DICOM/1.2.840.113745.101000.2197000.42298.6662.18367364-2-7-2ike5eg.dcm",
   "modificationTime": "2019-03-26T17:35:00.000-04:00",
@@ -567,7 +567,7 @@
     "PixelSpacing": "0.824219//0.824219",
     "RescaleType": "HU"
   }
-}
+},
 {
   "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scans/190683/SCANS/2/DICOM/1.2.840.113745.101000.2197000.42298.6662.18367364-2-3-2ike5ec.dcm",
   "modificationTime": "2019-03-26T17:35:01.000-04:00",
@@ -681,7 +681,7 @@
     "PixelSpacing": "0.824219//0.824219",
     "RescaleType": "HU"
   }
-}
+},
 {
   "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scans/190683/SCANS/2/DICOM/1.2.840.113745.101000.2197000.42298.6662.18367364-2-7-3ike5eg.dcm",
   "modificationTime": "2019-03-26T17:35:00.000-04:00",
@@ -795,7 +795,7 @@
     "PixelSpacing": "0.824219//0.824219",
     "RescaleType": "HU"
   }
-}
+},
 {
   "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scans/190683/SCANS/2/DICOM/1.2.840.113745.101000.2197000.42298.6662.18367364-2-3-3ike5ec.dcm",
   "modificationTime": "2019-03-26T17:35:01.000-04:00",
@@ -909,7 +909,7 @@
     "PixelSpacing": "0.824219//0.824219",
     "RescaleType": "HU"
   }
-}
+},
 {
   "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scans/190683/SCANS/2/DICOM/1.2.840.113745.101000.2197000.42298.6662.18367364-2-7-4ike5eg.dcm",
   "modificationTime": "2019-03-26T17:35:00.000-04:00",
@@ -1023,7 +1023,7 @@
     "PixelSpacing": "0.824219//0.824219",
     "RescaleType": "HU"
   }
-}
+},
 {
   "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scans/190683/SCANS/2/DICOM/1.2.840.113745.101000.2197000.42298.6662.18367364-2-4-1ike5ec.dcm",
   "modificationTime": "2019-03-26T17:35:01.000-04:00",
@@ -1137,7 +1137,7 @@
     "PixelSpacing": "0.824219//0.824219",
     "RescaleType": "HU"
   }
-}
+},
 {
   "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scans/190683/SCANS/2/DICOM/1.2.840.113745.101000.2197000.42298.6662.18367364-2-7-5ike5eg.dcm",
   "modificationTime": "2019-03-26T17:35:00.000-04:00",
@@ -1251,7 +1251,7 @@
     "PixelSpacing": "0.824219//0.824219",
     "RescaleType": "HU"
   }
-}
+},
 {
   "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scans/190683/SCANS/2/DICOM/1.2.840.113745.101000.2197000.42298.6662.18367364-2-3-5ike5ec.dcm",
   "modificationTime": "2019-03-26T17:35:01.000-04:00",
@@ -1365,7 +1365,7 @@
     "PixelSpacing": "0.824219//0.824219",
     "RescaleType": "HU"
   }
-}
+},
 {
   "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scans/190683/SCANS/2/DICOM/1.2.840.113745.101000.2197000.42298.6662.18367364-2-7-6ike5eg.dcm",
   "modificationTime": "2019-03-26T17:35:00.000-04:00",
@@ -1479,7 +1479,7 @@
     "PixelSpacing": "0.824219//0.824219",
     "RescaleType": "HU"
   }
-}
+},
 {
   "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scans/190683/SCANS/2/DICOM/1.2.840.113745.101000.2197000.42298.6662.18367364-2-3-6ike5ec.dcm",
   "modificationTime": "2019-03-26T17:35:01.000-04:00",
@@ -1593,7 +1593,7 @@
     "PixelSpacing": "0.824219//0.824219",
     "RescaleType": "HU"
   }
-}
+},
 {
   "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scans/190683/SCANS/2/DICOM/1.2.840.113745.101000.2197000.42298.6662.18367364-2-7-7ike5eg.dcm",
   "modificationTime": "2019-03-26T17:35:00.000-04:00",
@@ -1707,7 +1707,7 @@
     "PixelSpacing": "0.824219//0.824219",
     "RescaleType": "HU"
   }
-}
+},
 {
   "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scans/190683/SCANS/2/DICOM/1.2.840.113745.101000.2197000.42298.6662.18367364-2-3-7ike5ec.dcm",
   "modificationTime": "2019-03-26T17:35:01.000-04:00",
@@ -1821,7 +1821,7 @@
     "PixelSpacing": "0.824219//0.824219",
     "RescaleType": "HU"
   }
-}
+},
 {
   "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scans/190683/SCANS/2/DICOM/1.2.840.113745.101000.2197000.42298.6662.18367364-2-7-8ike5eg.dcm",
   "modificationTime": "2019-03-26T17:35:00.000-04:00",
@@ -1935,7 +1935,7 @@
     "PixelSpacing": "0.824219//0.824219",
     "RescaleType": "HU"
   }
-}
+},
 {
   "path": "file:/gpfs/mskmindhdp_emc/data/LUNG_18-193/scans/190683/SCANS/2/DICOM/1.2.840.113745.101000.2197000.42298.6662.18367364-2-3-8ike5ec.dcm",
   "modificationTime": "2019-03-26T17:35:01.000-04:00",
@@ -2049,5 +2049,5 @@
     "PixelSpacing": "0.824219//0.824219",
     "RescaleType": "HU"
   }
-}
+}]
 
