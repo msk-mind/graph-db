@@ -3,6 +3,7 @@ Created on April 22, 2021
 
 @author: pashaa@mskcc.org
 '''
+import glob
 import os
 import shutil
 
@@ -36,7 +37,10 @@ def df_to_json(df, json_path):
     :param json_path: path where json should be written
     """
     df.coalesce(1).write.format('json').save(json_path)
-    logger.info('wrote json for ' + str(df.count()) + ' records')
+    json_file = glob.glob(json_path+'/*.json')[0]
+    new_json_file = json_path+'/part.json'
+    os.rename(json_file, new_json_file)
+    logger.info('wrote json for ' + str(df.count()) + ' records to '+new_json_file)
 
 
 def delta_to_json(delta_path, json_path):
