@@ -26,7 +26,8 @@ This library allows users to import records from various sources like CSV, parqu
 Test
 ----
 
-::
+.. code-block:: bash
+
     $ make test
 
 
@@ -34,7 +35,8 @@ Usage
 -----
 Setup a local neo4j instance with credentials as specified in tests/test_app_config.yml and execute the following commmand.
 
-::
+.. code-block:: bash
+
     $ python -m graph_db.builder -d tests/test_data_config.yml -a tests/test_app_config.yml
 
 
