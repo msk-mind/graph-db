@@ -4,12 +4,19 @@ Created on April 22, 2021
 @author: pashaa@mskcc.org
 '''
 import os
-from graph_db.common.config import APP_CFG
+import shutil
+
+from graph_db.common.config import APP_CFG, ConfigSet, DATA_CFG
 from graph_db.common.custom_logger import init_logger
 from graph_db.common.spark_session import SparkConfig
 
 
 logger = init_logger()
+
+
+def df_to_json(df, json_path):
+    df.coalesce(1).write.format('json').save(json_path)
+    logger.info('wrote json for ' + str(df.count()) + ' records')
 
 
 def delta_to_json(delta_path, json_path):
@@ -26,6 +33,16 @@ def delta_to_json(delta_path, json_path):
     df = spark.read.format('delta').load(delta_path)
     logger.info('dataframe has ' + str(df.count()) + ' records')
 
+    cfg = ConfigSet()
+    overwrite_json = cfg.get_value(DATA_CFG + '::$.overwrite_json')
+
     # write table
-    logger.info('preparing to write json for '+str(df.count())+' records')
-    df.coalesce(1).write.format('json').save(json_path)
+    if os.path.exists(json_path):
+        if overwrite_json:
+            logger.info('overwriting ' + json_path)
+            shutil.rmtree(json_path)
+            df_to_json(df, json_path)
+        else:
+            logger.info('skipping writing of json for ' + delta_path)
+    else:
+        df_to_json(df, json_path)

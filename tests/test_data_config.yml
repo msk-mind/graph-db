@@ -1,8 +1,8 @@
 # location to store json files
 neo4j_import_dir: '/opt/neo4j-community-4.2.4/import'
 
-# clean out the jsons after execution?
-clean_neo4j_import_dir: False
+# if set to false, json will not be overwritten if it already exists
+overwrite_json: True
 
 # convert a list of delta tables and save them in the neo4j_import_dir
 delta_to_json: [
@@ -20,5 +20,5 @@ delta_to_json: [
 cipher: [
     # specify paths to files containing cipher queries
     path: 'tests/cipher1.cql',
-    path: 'tests/cipher2.sql'
-]   
+    path: 'tests/cipher2.cql'
+]

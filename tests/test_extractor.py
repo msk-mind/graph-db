@@ -11,7 +11,7 @@ import pandas as pd
 import shutil
 
 import pytest
-from graph_db.common.config import ConfigSet, APP_CFG
+from graph_db.common.config import ConfigSet, APP_CFG, DATA_CFG
 from graph_db.extractor import delta_to_json
 
 delta_table = 'tests/input_data/user_table'
@@ -21,7 +21,8 @@ json_path = 'tests/output_data/user_table'
 def setup():
     if os.path.exists(json_path):
         shutil.rmtree(json_path)
-    cfg = ConfigSet(name=APP_CFG, config_file='tests/test_app_config.yml')
+    ConfigSet(name=APP_CFG, config_file='tests/test_app_config.yml')
+    cfg = ConfigSet(name=DATA_CFG, config_file='tests/test_data_config.yml')
 
 
 def test_delta_to_json(setup):
