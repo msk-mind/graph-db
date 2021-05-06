@@ -39,35 +39,35 @@ def main(data_config_file, app_config_file):
         json_path = os.path.join(neo4j_import_dir, os.path.basename(delta_path))
         delta_to_json(delta_path, json_path)
 
-    # run cipher queries in cql files
+    # run cypher queries in cql files
     uri = cfg.get_value(path=APP_CFG + '::$.neo4j[0][uri]'),
     user = cfg.get_value(path=APP_CFG + '::$.neo4j[1][username]'),
     pwd = cfg.get_value(path=APP_CFG + '::$.neo4j[2][password]')
     conn = Neo4jConnection(uri=uri[0], user=user[0],
                            pwd=pwd)  # todo: remove tuple for uri and user. not sure why they are tuples
 
-    ciphers = cfg.get_value(DATA_CFG + '::$.cipher')
+    cyphers = cfg.get_value(DATA_CFG + '::$.cypher')
 
-    for cipher in ciphers:
-        cipher_path = cipher['path']
-        logger.info('processing ' + cipher_path)
+    for cypher in cyphers:
+        cypher_path = cypher['path']
+        logger.info('processing ' + cypher_path)
 
-        overwrite_cipher = cfg.get_value(DATA_CFG + '::$.overwrite_cipher')
+        overwrite_cypher = cfg.get_value(DATA_CFG + '::$.overwrite_cypher')
 
-        cipher_file = os.path.basename(cipher_path)
-        dest_path = os.path.join(neo4j_import_dir, cipher_file)
+        cypher_file = os.path.basename(cypher_path)
+        dest_path = os.path.join(neo4j_import_dir, cypher_file)
 
         if os.path.exists(dest_path):
-            if overwrite_cipher:
+            if overwrite_cypher:
                 logger.info('overwriting ' + dest_path)
                 os.remove(dest_path)
-                shutil.copy(cipher_path, neo4j_import_dir)
-                conn.query("call apoc.cypher.runFile('file:///{0}')".format(cipher_file))
+                shutil.copy(cypher_path, neo4j_import_dir)
+                conn.query("call apoc.cypher.runFile('file:///{0}')".format(cypher_file))
             else:
-                logger.info('skipping writing of cipher for ' + cipher_file)
+                logger.info('skipping writing of cypher for ' + cypher_file)
         else:
-            shutil.copy(cipher_path, neo4j_import_dir)
-            conn.query("call apoc.cypher.runFile('file:///{0}')".format(cipher_file))
+            shutil.copy(cypher_path, neo4j_import_dir)
+            conn.query("call apoc.cypher.runFile('file:///{0}')".format(cypher_file))
 
 
 

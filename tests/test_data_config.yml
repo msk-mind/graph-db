@@ -18,11 +18,11 @@ delta_to_json: [
 ]
 
 # if set to false, cypher will not be overwritten into neo4j's import dir if it already exists
-overwrite_cipher: True
+overwrite_cypher: True
 
-# execute the following cipher queries in sequence in order to load json data and build relationships
-cipher: [
-    # specify paths to files containing cipher queries
-    path: 'tests/cipher1.cql',
-    path: 'tests/cipher2.cql'
+# execute the following cypher queries in sequence in order to load json data and build relationships
+cypher: [
+    # specify paths to files containing cypher queries
+    path: 'tests/cypher1.cql',
+    path: 'tests/cypher2.cql'
 ]
