@@ -14,15 +14,28 @@ graph-db
         :alt: Documentation Status
 
 
-
-
-Integrated labeled property graph generation using neo4j.
+A library for the generation of an integrated labeled property graph using neo4j.
 
 This library allows users to import records from various sources like CSV, parquet etc into noe4j and form relationships on the imported records. It is assumed that the user of this library is familiar with neo4j's cypher query language.
 
 
 * Free software: Apache Software License 2.0
 * Documentation: https://graph-db.readthedocs.io.
+
+
+test
+----
+
+::
+    $ make test
+
+
+usage
+-----
+Setup a local neo4j instance and execute the following commmand.
+
+::
+    $ python -m graph_db.builder -d tests/test_data_config.yml -a tests/test_app_config.yml
 
 
 Features
@@ -39,6 +52,12 @@ Features
 * Ability to easily create many such databases on the fly and not be limited to one. Leads to flexibility and adaptability - especially useful for R&D
 
 * Idempotent graph generation process
+
+
+Todo
+----
+- simplify app_config and data_config by removing lists
+
 
 Credits
 -------
